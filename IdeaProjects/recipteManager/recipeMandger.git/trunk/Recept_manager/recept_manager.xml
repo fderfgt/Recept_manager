@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="recept_manager">
+  <path id="common_library">
+    <pathelement location="servlet-api.jar"/>
+  </path>
+  <target name="compile">
+
+    <javac srcdir="src" destdir="web/WEB-INF/classes" failonerror="true" fork="true">
+      <classpath refid="common_library"/>
+    </javac>
+  </target>
+</project>
